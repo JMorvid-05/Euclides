@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="global.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand text-white">Algoritmo de Euclides > Máximo Común Divisor</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                </li>
+            </ul>
+            <img src="./img/image.png" class="img-fluid logoUD" alt="Responsive image">
+
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card ">
+                    <div class="card-body ">
+                        <div class="mb-6 p-3 paddingTB">
+                            <label for="numeroU" class="form-label colorTxtCard font-weight-bold">Digite el primer
+                                número:</label>
+                            <div class="input-group-prepend ">
+                                <span class="input-group-text bg-white borderRadius " id="espacioU"><i id="simboloU"
+                                        class="fas "></i></span>
+                                <input type="text" class="form-control numero" id="numeroU" required>
+                            </div>
+                            <div class="msjErrorU">
+                                <div class=" alert alert-danger d-flex align-items-center">
+                                    <i class="fas fa-times"></i> &nbsp &nbsp
+                                    <div class="txtU">
+                                        ¡No se aceptan campos vacíos!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-6 p-3 paddingTB">
+                            <label for="numeroD" class="form-label colorTxtCard font-weight-bold">Digite el segundo
+                                número:</label>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-white borderRadius" id="espacioD"><i id="simboloD"
+                                        class="fas "></i></span>
+                                <input type="text" class="form-control numero" id="numeroD" required>
+                            </div>
+                            <div class="msjErrorD">
+                                <div class=" alert alert-danger d-flex align-items-center">
+                                    <i class="fas fa-times"></i> &nbsp &nbsp
+                                    <div class="txtD">
+                                        ¡No se aceptan campos vacíos!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msjErrorT">
+                            <div class=" alert alert-danger d-flex align-items-center">
+                                <i class="fas fa-exclamation"></i> &nbsp &nbsp
+                                <div>
+                                    El segundo número digitado debe ser menor al primero. Por favor
+                                    digite un número que cumpla esa condición.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="btnHallar" class="btn btn-success item-center">Hallar Máximo Común Divisor</button>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div>
+                    <div class="card ">
+                        <div class="card-body">
+
+
+                            <h5 class="card-title colorTxtCard"> Operaciones: </h5>
+                            <p class="card-text operaciones">
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="jumbotron jumbotrons">
+       
+        <div class="row">
+            <div class="biografia">
+                <h1 class="display-4"><b>Euclides de Alejandría: </b></h1>
+                <img class="izquierda img-fluid" src="./img/Euclides.jpg">
+                <p><b> Fecha de Nacimiento:</b> 325 A.C. <br> <b> Fecha de Fallecimiento:</b> 265 A.C. (Alejandría, Egipto)
+                <br> <b>Ocupación:</b> Matemático (Geometría) y escritor <br> <b>Hipótesis de su existencia: </b> 
+                <br> 1. Euclides fue un matemático histórico que escribió los Elementos y otras obras atribuidas a él.
+                <br> 2. Euclides fue el líder de un equipo de matemáticos que trabajaba en Alejandría. Todos ellos contribuyeron a escribir las obras completas de Euclides, 
+                incluso firmando los libros con el nombre de Euclides después de su muerte.
+                <br> 3. Las obras completas de Euclides fueron escritas por un equipo de matemáticos de Alejandría que tomaron el nombre Euclides del personaje histórico Euclides 
+                de Mégara, que había vivido unos cien años antes.
+                </p>
+                <div class="reset"></div>
+              </div>
+              <div class="biografia">
+                <h1 class="display-4"><b>Algoritmo de Euclides: </b></h1>
+                <img class="izquierda img-fluid" style="width: 400px; height: 300px;" src="./img/rectas.png">
+                <p style="margin-top: 10%;">Los segmentos AB y CD se dice que son conmensurables (que puede ser valuado o medido) si existe un
+                    tercer
+                    segmento <i>u</i> tal que <i>AB </i> y <i>CD </i> pueden ambos medirse de forma exacta
+                    utilizando el segmento <i> u </i> como unidad.
+                </p>
+                <div class="reset"></div>
+              </div>
+        </div>
+    </div>
+</body>
+<footer id="sticky-footer" class="flex-shrink-0 py-4 bg-white text-white-50">
+    <div class="container text-center">
+        <small>Ejercicio Algoritmo de Euclides // Universidad Distrital // 2022</small>
+    </div>
+</footer>
+
+<script src="https://kit.fontawesome.com/159635a384.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+
+</html>
