@@ -157,11 +157,11 @@ $('.numero').on('input', function () {
 });
 var campoU = document.getElementById('numeroU');
 campoU.addEventListener('input', function () {
-    if (this.value.length > 7)
-        this.value = this.value.slice(0, 7);
+    if (this.value.length > 8)
+        this.value = this.value.slice(0, 8);
 });
 var campoD = document.getElementById('numeroD');
 campoD.addEventListener('input', function () {
-    if (this.value.length > 7)
-        this.value = this.value.slice(0, 7);
+    if (this.value.length > 8)
+        this.value = this.value.slice(0, 8);
 });
